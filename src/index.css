@@ -82,12 +82,12 @@ body {
   color:rgb(255, 255, 255)
 }
 
-.main_menu::after {
-  content: "|";
-  float: right;
-  color: #fff;
-  padding-left: 2.5em;
-  }
-  .main_menu li:last-child::after{
-    content: none;
-  }
+.main_menu::after{
+  border-left: 6px solid white;
+  height: 200px;
+  position:absolute;
+  left: 50%;
+}
+/* .main_menu:last-child::after{
+  content: '.'
+} */

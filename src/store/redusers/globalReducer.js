@@ -1,5 +1,6 @@
 const initialState = {
-    image: []
+    image: [],
+    isOpenSpinner:false,
 }
 
 const globalReducer = (state = initialState, action) => {
@@ -9,6 +10,12 @@ const globalReducer = (state = initialState, action) => {
                 ...state,
                 image:action.data
 
+            }
+        }
+        case "set_or_remuve_spinner":{
+            return{
+                ...state,
+                isOpenSpinner:action.isOpenSpinner
             }
         }
         default: return state

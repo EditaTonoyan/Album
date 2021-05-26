@@ -160,7 +160,6 @@ const Menu1 = (props) => {
             style={{textAlign:"center"}}
             theme="dark" 
             mode="horizontal" 
-            // defaultSelectedKeys={navlinks}
         >
          {getnavLink}
         </Menu>
