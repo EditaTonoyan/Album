@@ -12,9 +12,8 @@ const ImageCard = (props) => {
 
     const setSpans = () => {
         const height = inpRef.current.clientHeight;
-        console.log(height);
-        const span = Math.ceil(height / 10);
-        setSpan(span)
+        const spans = Math.ceil(height / 10);
+        setSpan({ ...span, span: spans })
     }
 
     return (

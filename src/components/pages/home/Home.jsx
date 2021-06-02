@@ -4,7 +4,6 @@ import Search from '../../Search';
 import ImageList from '../../imageList/ImageList';
 import Spinner from '../../../components/spinner/Spinner';
 import { getAllImagesThunk, getImagesFromSearch } from '../../../store/action';
-require('dotenv').config()
 
 
 const Home = (props) => {
@@ -17,6 +16,7 @@ const Home = (props) => {
 
     useEffect(() => {
         props.getImages();
+
     }, [])
 
     return (

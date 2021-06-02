@@ -13,7 +13,12 @@ const AboutUs = () => {
             </div>
 
             <div className={styles.div}>
-                <img className={styles.img} src="https://unsplash-assets.imgix.net/marketing/about-header.jpg" />
+                <img
+                    className={styles.img}
+                    src="https://unsplash-assets.imgix.net/marketing/about-header.jpg"
+                    alt="img"
+
+                />
             </div>
         </div>
     )
