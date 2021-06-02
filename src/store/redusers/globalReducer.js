@@ -1,21 +1,21 @@
 const initialState = {
     image: [],
-    isOpenSpinner:false,
+    isOpenSpinner: false,
 }
 
 const globalReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "get_images":{
-            return{
+        case "get_images": {
+            return {
                 ...state,
-                image:action.data
+                image: action.data
 
             }
         }
-        case "set_or_remuve_spinner":{
-            return{
+        case "set_or_remuve_spinner": {
+            return {
                 ...state,
-                isOpenSpinner:action.isOpenSpinner
+                isOpenSpinner: action.isOpenSpinner
             }
         }
         default: return state

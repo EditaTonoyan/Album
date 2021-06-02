@@ -4,13 +4,13 @@ import Technology from './components/pages/technology/Technology';
 import AboutUs from './components/aboutUs/AboutUs';
 import './App.css';
 import Menu1 from './components/Menu';
-import {Route,Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Spirituality from './components/pages/spirituality/Spirituality';
 
 const router = [
-  { 
+  {
     path: "/",
-    component : Home,
+    component: Home,
     exact: true
   },
   {
@@ -20,43 +20,43 @@ const router = [
   },
   {
     path: "/technology",
-    component:Technology,
+    component: Technology,
     exact: true
   },
   {
     path: "/about",
-    component:AboutUs,
+    component: AboutUs,
     exact: true
   },
   {
     path: "/spirituality",
-    component:Spirituality,
+    component: Spirituality,
     exact: true
   },
-  
+
 
 ]
 
 function App() {
-  const pages = router.map((page,index) =>{
+  const pages = router.map((page, index) => {
     return (
       <Route
-      key = {index}
-      path={page.path}
-      component = {page.component}
-      exact={page.exact}
-    />
+        key={index}
+        path={page.path}
+        component={page.component}
+        exact={page.exact}
+      />
     )
   })
   return (
     <div className="container">
-    <Menu1/>
-    <Switch>
-       {pages}
-    </Switch>
- 
+      <Menu1 />
+      <Switch>
+        {pages}
+      </Switch>
 
-</div>
+
+    </div>
   );
 }
 

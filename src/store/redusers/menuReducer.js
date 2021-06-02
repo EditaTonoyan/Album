@@ -4,8 +4,8 @@ const initialState = {
 
 const menuReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "toggle_collapsed":{
-            return{
+        case "toggle_collapsed": {
+            return {
                 ...state,
                 collapsed: !state.collapsed
 

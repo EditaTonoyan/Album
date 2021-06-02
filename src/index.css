@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -87,7 +87,4 @@ body {
   height: 200px;
   position:absolute;
   left: 50%;
-}
-/* .main_menu:last-child::after{
-  content: '.'
 } */
